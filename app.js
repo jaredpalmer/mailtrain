@@ -109,7 +109,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(session({
-    store: config.redis.enabled ? new RedisStore(config.redis) : false,
+    store: config.redis ? new RedisStore(config.redis) : false,
     secret: config.www.secret,
     saveUninitialized: false,
     resave: false

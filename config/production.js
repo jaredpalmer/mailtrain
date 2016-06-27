@@ -13,9 +13,7 @@ module.exports = {
     postsize: process.env.POSTSIZE || '2MB'
   },
   mysql: `${process.env.JAWSDB_MARIA_URL}?charset=utf8mb4`,
-  redis: {
-    enabled: false
-  },
+  redis: process.env.REDIS_URL,
   verp: {
     enabled: false
   }
