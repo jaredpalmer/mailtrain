@@ -1,0 +1,13 @@
+{
+  "name": "mailtrain",
+  "success_url": "/",
+  "scripts": {
+  },
+  "env": {
+  },
+  "image": "heroku/nodejs",
+  "addons": [
+    "jawsdb-maria",
+    "papertrail"
+  ]
+}
